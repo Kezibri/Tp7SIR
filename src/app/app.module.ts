@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { PersonComponent } from './person/person.component';
 import { PersonService } from './person.service';
 import {routes} from './app.routing';
+import { PersonDetailsComponent } from './person/person-details/person-details.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PersonComponent
+    PersonComponent,
+    PersonDetailsComponent
   ],
   imports: [
     BrowserModule,
