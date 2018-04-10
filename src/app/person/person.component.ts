@@ -19,5 +19,4 @@ export class PersonComponent implements OnInit {
       error => console.log(error),
     );
   }
-
 }

@@ -1,7 +1,7 @@
 <h2>Personnes</h2>
 
 <table class="table">
-  <thead><tr><th>Identifiant</th><th>Prenom</th><th>Nom</th><th>Mail</th><th>Details</th></tr></thead>
+  <thead><tr><th>Identifiant</th><th>Prenom</th><th>Nom</th><th>Mail</th><th></th></tr></thead>
   <tbody>
   <tr *ngFor="let person of people">
     <td>{{person.id}}</td>
@@ -10,7 +10,7 @@
     <td><a href="mailto:{{person.mail}}">{{person.mail}}</a></td>
     <td>
       <a routerLink={{person.id}} routerLinkActive="active" class="item">
-        Voir
+        Détails
       </a>
     </td>
   </tr>
