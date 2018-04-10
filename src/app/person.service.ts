@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {Person} from './person.model';
+import {Person} from './person/person';
 
 @Injectable()
 export class PersonService {
@@ -16,13 +16,6 @@ export class PersonService {
     return this.http.get<Person>('rest/person/' + id);
   }
 
-  public createPerson(person) {
-    const _http = new HttpHeaders();
-    const hhttp = _http.append('Content-Type', 'application/json');
-    const options =  {
-      http: http
-    };
-    return this.http.post<Person>('rest/person', person, options);
-  }
+
 
 }

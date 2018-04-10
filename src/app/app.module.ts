@@ -7,7 +7,7 @@ import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { PersonComponent } from './person/person.component';
 import { PersonService } from './person.service';
-import { AppRoutingModule } from './app-routing/app-routing.module';
+import {routes} from './app.routing';
 
 
 @NgModule({
@@ -17,9 +17,9 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
   ],
   imports: [
     BrowserModule,
-	AppRoutingModule,
 	FormsModule,
-    HttpClientModule
+    HttpClientModule,
+	routes
   ],
   providers: [
   PersonService

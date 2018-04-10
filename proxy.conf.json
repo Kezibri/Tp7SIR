@@ -1,6 +1,6 @@
 {
   "/rest/*": {
-    "target": "http://localhost:8080",
+    "target": "http://localhost:9002",
     "secure": false
   }
 }
