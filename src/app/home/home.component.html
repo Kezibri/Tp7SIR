@@ -1,0 +1,13 @@
+<h2>Maisons</h2>
+
+<h3>Liste des maisons référencées</h3>
+<table class="table">
+  <thead><tr><th>Identifiant</th><th>Nombre de pièces</th><th>Superficie</th></tr></thead>
+  <tbody>
+  <tr *ngFor="let home of homes">
+    <td>{{home.id}}</td>
+    <td>{{home.numRooms}}</td>
+    <td>{{home.surface}}</td>
+  </tr>
+  </tbody>
+</table>
