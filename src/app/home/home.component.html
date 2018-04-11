@@ -2,10 +2,11 @@
 
 <h3>Liste des maisons référencées</h3>
 <table class="table">
-  <thead><tr><th>Identifiant</th><th>Nombre de pièces</th><th>Superficie</th></tr></thead>
+  <thead><tr><th>Identifiant</th><th>Type de la maison</th><th>Nombre de pièces</th><th>Superficie</th></tr></thead>
   <tbody>
   <tr *ngFor="let home of homes">
     <td>{{home.id}}</td>
+	<td>{{home.myHome}}</td>
     <td>{{home.numRooms}}</td>
     <td>{{home.surface}}</td>
   </tr>
