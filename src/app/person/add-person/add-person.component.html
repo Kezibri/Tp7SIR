@@ -1,0 +1,21 @@
+<h2>Nouvelle personne</h2>
+
+<form (ngSubmit)="save()" #addPersonForm="ngForm" class="ui form">
+  <div>
+    <label>Nom</label>
+    <input name="familyName" [(ngModel)]="person.familyName" type="text" required />
+  </div>
+  <div>
+    <label>Prenom</label>
+    <input name="firstName" [(ngModel)]="person.firstName" type="text" required />
+  </div>
+  <div>
+    <label>Mail</label>
+    <input  name="mail" [(ngModel)]="person.mail" type="email" required>
+  </div>
+  <div>
+    <button type="submit">
+      Ajouter
+    </button>
+  </div>
+</form>

@@ -11,6 +11,7 @@ import { HomeService } from './home.service';
 import {routes} from './app.routing';
 import { PersonDetailsComponent } from './person/person-details/person-details.component';
 import { HomeComponent } from './home/home.component';
+import { AddPersonComponent } from './person/add-person/add-person.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     PersonComponent,
     PersonDetailsComponent,
-    HomeComponent
+    HomeComponent,
+    AddPersonComponent
   ],
   imports: [
     BrowserModule,

@@ -20,4 +20,14 @@ export class PersonService {
   public getPersonHomes(id: number) {
     return this.http.get<Home[]>('rest/person/' + id + '/homes');
   }
+  
+  public createPerson(person) {
+    const _headers = new HttpHeaders();
+    const headers = _headers.append('Content-Type', 'application/json');
+    const options =  {
+      headers: headers
+    };
+    return this.http.post<Person>('rest/person', person, options);
+  }
+  
 }
