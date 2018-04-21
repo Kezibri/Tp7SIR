@@ -8,8 +8,8 @@ import {AddPersonComponent} from './person/add-person/add-person.component';
 export const router: Routes = [
   { path: 'people', component: PersonComponent },
   { path: 'homes', component: HomeComponent },
-  { path: 'people/:id', component: PersonDetailsComponent },
-  { path: 'people/add', component: AddPersonComponent }
+  { path: 'people/add', component: AddPersonComponent },
+  { path: 'people/:id', component: PersonDetailsComponent }
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);
